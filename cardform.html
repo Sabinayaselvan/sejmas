@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Form</title>
+  <link rel="stylesheet" href="cardform.css">
+</head>
+<body>
+    <a href="index.html" class="back-arrow">← Back</a>
+
+  <div class="form-container">
+    <h2>Card Request Form</h2>
+    <form id="cardForm">
+      
+      <!-- Name -->
+      <label for="name">Name *</label>
+      <input type="text" id="name" name="name" required>
+
+      <!-- Phone Number -->
+      <label for="phone">Phone Number *</label>
+      <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="10-digit number">
+
+      <!-- Radio Buttons -->
+      <label>Card Type *</label>
+      <div class="radio-group">
+        <label><input type="radio" name="cardType" value="Greeting & Personal Cards" required> Greeting & Personal Cards</label>
+        <label><input type="radio" name="cardType" value="Invitations"> Invitations</label>
+        <label><input type="radio" name="cardType" value="Business & Professional Cards"> Business & Professional Cards</label>
+        <label><input type="radio" name="cardType" value="Digital & E-Cards"> Digital & E-Cards</label>
+        <label><input type="radio" name="cardType" value="Event & Special Occasion Cards"> Event & Special Occasion Cards</label>
+      </div>
+
+      <!-- Description -->
+      <label for="description">Description</label>
+      <textarea id="description" name="description" rows="4"></textarea>
+
+      <!-- Note -->
+      <p class="note">
+        You will get a call within 24 hours to confirm the card details and timeline.
+      </p>
+
+      <!-- Buttons -->
+      <div class="button-group">
+        <button type="submit" class="btn primary">Make it Happen</button>
+        <button type="reset" class="btn secondary">Clear Form</button>
+      </div>
+
+    </form>
+  </div>
+  
+  <script src="cardform.js"></script>
+</body>
+</html>

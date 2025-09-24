@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Form - Sejmas</title>
+  <link rel="stylesheet" href="projectform.css" />
+</head>
+<body>
+    <a href="index.html" class="back-arrow">← Back</a>
+
+  <div class="form-container">
+    <h2>Submit Your Project</h2>
+    <form id="projectForm">
+      
+      <!-- Name -->
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <!-- Contact -->
+      <div class="form-group">
+        <label for="contact">Contact Number *</label>
+        <input type="tel" id="contact" name="contact" required />
+      </div>
+
+      <!-- Domain Dropdown -->
+      <div class="form-group">
+        <label for="domain">Project Domain *</label>
+        <select id="domain" name="domain" required>
+          <option value="">-- Select Domain --</option>
+          <option>Web Development</option>
+          <option>Mobile App Development</option>
+          <option>Cloud Computing</option>
+          <option>DevOps & Automation</option>
+          <option>Artificial Intelligence (AI)</option>
+          <option>Machine Learning (ML)</option>
+          <option>Deep Learning</option>
+          <option>Natural Language Processing (NLP)</option>
+          <option>Computer Vision</option>
+          <option>Data Analytics</option>
+          <option>Cybersecurity</option>
+          <option>Cryptography</option>
+          <option>Blockchain</option>
+          <option>SaaS Products</option>
+          <option>Healthcare Tech → disease prediction, telemedicine apps</option>
+          <option>Finance & Fintech → trading bots, expense trackers, fraud detection</option>
+          <option>Education Tech → learning platforms, exam prep apps</option>
+          <option>Healthcare Technology</option>
+          <option>Fintech / Finance Applications</option>
+          <option>Education Technology</option>
+          <option>E-Governance & Social Impact → complaint tracking, crowd-sourcing platforms</option>
+        </select>
+      </div>
+
+      <!-- Reason -->
+      <div class="form-group">
+        <label for="reason">Reason for Project *</label>
+        <input type="text" id="reason" name="reason" required />
+      </div>
+
+      <!-- Description -->
+      <div class="form-group">
+        <label for="description">Project Description</label>
+        <textarea id="description" name="description"></textarea>
+      </div>
+
+      <!-- Info Text -->
+      <p class="info-text">
+        Sejmas is unique in doing project in Client's Expected Budget with prior Quality 
+        and Innovation. So, Don't Worry about budget when you do project with us.
+      </p>
+
+      <!-- Buttons -->
+      <div class="form-buttons">
+        <button type="submit" class="submit-btn">Make it Happen</button>
+        <button type="button" class="clear-btn" onclick="clearForm()">Clear Form</button>
+      </div>
+
+    </form>
+  </div>
+  <script src="projectform.js"></script>
+</body>
+</html>

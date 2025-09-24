@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Tabbed Navigation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Sejmas Innovations</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="whychooseus.html">Why Choose Us</a></li>
+        <li><a href="career.html">Career</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Quote Section -->
+  <section class="quote">
+    <p>
+      “Questioning of less amount of project bidding?? We understand the feelings 
+      of students as we are students once upon. <br>
+      Price less and no compromise in quality of work.”
+    </p>
+    <span>— by CEO’s</span>
+  </section>
+
+  <!-- Tab Navigation -->
+  <div class="tabs">
+    <div class="tab active" data-tab="projects">Projects</div>
+    <div class="tab" data-tab="reports">Reports</div>
+    <div class="tab" data-tab="journal">Journal</div>
+    <div class="tab" data-tab="cards">Cards</div>
+    <div class="tab" data-tab="services">Additional Services</div>
+  </div>
+
+  <!-- ================= Projects Tab ================= -->
+  <div id="projects" class="tab-content active">
+    <header class="header">
+      <h1>From Panic to Project — Sorted!</h1>
+      <p>Study. Chill. We’ll Handle the Project.</p>
+    </header>
+
+    <!-- Domains Section -->
+    <section class="domains">
+      <h2>Domains We Accept</h2>
+      <ul>
+        <li>Web Development</li>
+        <li>Mobile App Development</li>
+        <li>Cloud Computing</li>
+        <li>DevOps & Automation</li>
+        <li>Artificial Intelligence (AI)</li>
+        <li>Machine Learning (ML)</li>
+        <li>Deep Learning</li>
+        <li>Natural Language Processing (NLP)</li>
+        <li>Computer Vision</li>
+        <li>Data Analytics</li>
+        <li>Cybersecurity</li>
+        <li>Blockchain</li>
+        <li>SaaS Products</li>
+        <li>Healthcare Tech</li>
+        <li>Finance & Fintech</li>
+        <li>Education Tech</li>
+        <li>E-Governance & Social Impact</li>
+      </ul>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+      <h2>Project Pricing</h2>
+      <table>
+        <tr><td>1st Year</td><td>₹499</td></tr>
+        <tr><td>2nd Year</td><td>₹799</td></tr>
+        <tr><td>3rd Year</td><td>₹1499</td></tr>
+        <tr><td>4th Year</td><td>₹1999</td></tr>
+        <tr><td>Hackathons</td><td>₹2499</td></tr>
+      </table>
+    </section>
+
+    <!-- What You Get -->
+    <section class="benefits">
+      <h2>What You Get</h2>
+      <div class="card">
+        <h3>Before Project</h3>
+        <ul class="center-list">
+          <li>We bring your project ideas to life</li>
+          <li>Innovative IEEE project ideas & research support</li>
+          <li>Customization — your ideas, your way</li>
+          <li>Referral bonus ₹100 per client</li>
+        </ul>
+        <style>
+.center-list {
+  list-style-position: inside;   /* keeps bullets aligned with text */
+  display: inline-block;         /* makes the whole list act like a centered block */
+  text-align: left;              /* keeps text aligned neatly */
+  padding: 0;
+  margin: 0 auto;                /* centers the block */
+}
+.center-list li {
+  padding: 4px 0;                /* optional spacing between items */
+}
+</style>
+
+        <h3>During Project</h3>
+        <ul class="center-list">
+          <li>Call anytime for updates</li>
+          <li>Clean app designs & outstanding outputs</li>
+          <li>Phase-to-phase client meetings</li>
+          <li>Complete source code with explanation</li>
+        </ul>
+
+        <h3>After Project</h3>
+        <ul class="center-list">
+          <li>2 free services after delivery</li>
+          <li>Discounts on reports & journals</li>
+          <li>Ensuring smooth running on client system</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects Done -->
+    <section class="projects">
+      <h2>Projects Done</h2>
+      <div class="filter">
+        <label for="domainFilter">Filter by Domain:</label>
+        <select id="domainFilter">
+          <option value="all">All</option>
+          <option value="web">Web Development</option>
+          <option value="ai">AI / ML / DL</option>
+          <option value="health">Healthcare Tech</option>
+          <option value="finance">Fintech</option>
+          <option value="edu">Education Tech</option>
+        </select>
+      </div>
+
+      <div class="grid" id="projectGrid">
+        <div class="project-card" data-domain="web">Online Learning Platform</div>
+        <div class="project-card" data-domain="ai">AI Chatbot for College Queries</div>
+        <div class="project-card" data-domain="health">Disease Prediction System</div>
+        <div class="project-card" data-domain="finance">Expense Tracker App</div>
+        <div class="project-card" data-domain="edu">Exam Prep Application</div>
+      </div>
+
+    
+
+    <!-- Floating Button -->
+    <button class="order-btn">Make it Happen</button>
+  </div>
+  <!-- ================= End Projects Tab ================= -->
+
+  <!-- Reports -->
+  <div id="reports" class="tab-content">
+    <header class="report-header">
+    <h1>"Report Crisis? Consider It Handled."</h1>
+    <p>"Turn Panic into A+ Reports."</p>
+  </header>
+
+  <section class="pricing">
+    <h2>Pricing</h2>
+    <div class="pricing-grid">
+      <div class="price-card">Simple Project Report <span>₹ 99</span></div>
+      <div class="price-card">50 Pages <span>₹ 199</span></div>
+      <div class="price-card">80 Pages <span>₹ 299</span></div>
+      <div class="price-card">120 Pages <span>₹ 499</span></div>
+    </div>
+  </section>
+  <button class="report-order-btn">Make it Happen</button>
+
+  <section class="what-you-get">
+    <h2>What You Will Get</h2>
+    <div class="card">
+      <ul class="center-list">
+        <li>Reports in your college Template</li>
+        <li> 3 Free services after delivery</li>
+        <li> Make changes Anywhere, Anytime</li>
+        <li> Perfect Delivery in 7-14 days</li>
+        <li> ₹ 50 Referral Bonus on Potential clients</li>
+      </ul>
+      <style>
+.center-list {
+  list-style-position: inside;   /* keeps bullets aligned with text */
+  display: inline-block;         /* makes the whole list act like a centered block */
+  text-align: left;              /* keeps text aligned neatly */
+  padding: 0;
+  margin: 0 auto;                /* centers the block */
+}
+.center-list li {
+  padding: 4px 0;                /* optional spacing between items */
+}
+</style>
+    </div>
+  </section>
+
+  </div>
+  <!-- ================= End Report Tab ================= -->
+
+  <!-- ================= Journal Tab ================= -->
+<div id="journal" class="tab-content">
+  <header class="header">
+   <h1>Tired of Journal Paper Rejections?</h1>
+<p>Here a expert finish at a perfect price.</p>
+
+  </header>
+
+  <!-- Journal Options -->
+  <section class="journal-options">
+    <div class="journal-card">
+      <h3>Journal Paper (Custom Template)</h3>
+      <p class="price">₹ 1,199</p>
+      
+    </div>
+
+    <div class="journal-card">
+      <h3>Journal Paper (IEEE Template)</h3>
+      <p class="price"><span class="old-price">₹ 1,199</span> ₹ 999</p>
+      
+    </div>
+  </section>
+  <button class="journal-order-btn">Make it Happen</button>
+
+  <!-- What You Get -->
+  <section class="benefits">
+    <h2>What You Get</h2>
+    <ul>
+      <li>We ensure Plagiarism < 10% (excluding names & references)</li>
+      <li> Free Plag Report (worth ₹ 250)</li>
+      <li> 3 Free services after delivery</li>
+      <li> Make changes Anywhere, Anytime</li>
+      <li>Perfect Delivery in 3-5 days</li>
+      <li> ₹ 75 Referral Bonus on Potential clients</li>
+    </ul>
+  </section>
+
+  <!-- Additional Services -->
+  <section class="additional-services">
+    <h2>Additional Services (Claim only if you need)</h2>
+    <ul>
+      <li>AI Detection Removal — <span class="price">₹ 400</span></li>
+      <li>Editable Flowcharts — <span class="price">₹ 100</span></li>
+      <li>Extra Plag Report — <span class="price">₹ 250</span></li>
+    </ul>
+  </section>
+
+</div>
+<!-- ================= End Journal Tab ================= -->
+
+
+  <!-- Cards -->
+  <div id="cards" class="tab-content">
+     <header class="card-header">
+    <h1>“Personalized Cards, Pocket-Friendly Price!”</h1>
+    <p>“Your Dream Card, Only ₹49!”</p>
+  </header>
+
+  <section class="card-types">
+    <h2>Available Card Types</h2>
+    <div class="types-grid">
+      <div class="type-card">Greeting & Personal Cards</div>
+      <div class="type-card">Invitations</div>
+      <div class="type-card">Business & Professional Cards</div>
+      <div class="type-card">Digital & E-Cards</div>
+      <div class="type-card">Event & Special Occasion Cards</div>
+    </div>
+  </section>
+  <button class="card-order-btn">Make it Happen</button>
+
+  <section class="what-you-get">
+    <h2>What You Will Get</h2>
+    <div class="card-info">
+      <ul>
+        <li>Get the exact card design you want.</li>
+        <li>Receive your custom design within 2 days.</li>
+        <li>Printed cards available: Delivery for ₹50–₹100.</li>
+        <li>Premium designs: Additional charges of ₹20–₹40.</li>
+      </ul>
+    </div>
+  </section>
+
+  </div>
+  <!-- ================= End card  Tab ================= -->
+
+  <!-- Services -->
+  <div id="services" class="tab-content">
+    
+
+  <header class="service-header">
+    <h1>Additional Services</h1>
+    <p>Enhance your project journey with extra support.</p>
+  </header>
+
+  <section class="services-list">
+    <h2>Available Services</h2>
+    <table class="center-table">
+      <tr><td>PPT</td><td>₹20</td></tr>
+      <tr><td>Poster Presentation</td><td>₹20</td></tr>
+      <tr><td>Cybersecurity Consultant</td><td>Free</td></tr>
+      <tr><td>Project Guidelines Call (Initial)</td><td>₹50</td></tr>
+      <tr><td>Project Guidelines (Throughout Project)</td><td>₹99</td></tr>
+    </table>
+  <style>
+.center-table {
+  margin: 0 auto;        /* centers the table */
+  border-collapse: collapse;
+}
+.center-table td {
+  text-align: left;      /* aligns all text to the same left edge */
+  padding: 6px 12px;     /* optional padding for spacing */
+}
+</style>
+  </section>
+  <button class="service-order-btn">Make it Happen</button>
+
+  <section class="what-you-get">
+    <h2>What You Will Get</h2>
+    <div class="card-info">
+      <ul>
+        <li>PPTs are delivered within a day.</li>
+        <li>Poster presentations are delivered within a day.</li>
+      </ul>
+    </div>
+  </section>
+  </div>
+  <!-- ================= End Additional service  Tab ================= -->
+
+ <!-- Footer Section -->
+   <footer>
+    <div class="footer-container">
+      
+      <!-- Left Section -->
+      <div class="footer-left">
+        <h2>Sejmas<span>Innovations</span></h2>
+        <p>
+          Empowering student developers through collaborative projects, 
+          research, and innovation since 2025.
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          
+        </div>
+      </div>
+
+      <!-- Middle Section -->
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Projects</a></li>
+          <li><a href="index.html">Journal Papers</a></li>
+          <li><a href="index.html">Reports</a></li>
+          <li><a href="#">Placements Repository</a></li>
+      
+        </ul>
+      </div>
+
+      <!-- Right Section -->
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>jatinkm02@gmail.com</p>
+        <p>+91 7548883301</p>
+        <p><a href="#" class="contact-link">LinkedIn</a></p>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <p>© 2025 sejmasinnovations. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

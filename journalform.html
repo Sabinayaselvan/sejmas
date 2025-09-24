@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journal Form</title>
+  <link rel="stylesheet" href="journalform.css">
+</head>
+<body>
+    <a href="index.html" class="back-arrow">← Back</a>
+
+  <div class="form-container">
+    <h2>Journal Submission Form</h2>
+    <form id="journalForm">
+      
+      <!-- Name -->
+      <label for="name">Name *</label>
+      <input type="text" id="name" name="name" required>
+
+      <!-- Phone Number -->
+      <label for="phone">Phone Number *</label>
+      <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="10-digit number">
+
+      <!-- Radio Buttons -->
+      <label>Template *</label>
+      <div class="radio-group">
+        <label><input type="radio" name="template" value="custom" required> Custom Template</label>
+        <label><input type="radio" name="template" value="ieee"> IEEE Template</label>
+      </div>
+
+      <!-- Description -->
+      <label for="description">Description</label>
+      <textarea id="description" name="description" rows="4"></textarea>
+
+      <!-- Note -->
+      <p class="note">
+        Our academic writing team will review your requirements and contact you within 24 hours.
+      </p>
+
+      <!-- Buttons -->
+      <div class="button-group">
+        <button type="submit" class="btn primary">Make it Happen</button>
+        <button type="reset" class="btn secondary">Clear Form</button>
+      </div>
+
+    </form>
+  </div>
+  
+  <script src="journalform.js"></script>
+</body>
+</html>
