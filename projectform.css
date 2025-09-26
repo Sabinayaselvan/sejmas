@@ -113,3 +113,45 @@ textarea {
 .back-arrow:hover {
   color: #3d56c0;
 }
+
+.container {
+  width: 90%;  /* instead of fixed 1200px */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 300px; /* grows, shrinks, min 300px */
+}
+/* For tablets */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .sidebar {
+    display: none; /* hide sidebar on small screens */
+  }
+}
