@@ -29,12 +29,13 @@ img, video {
 /* ================================
    HEADER
 ================================ */
-header {
+.navbar {
+ 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
-  background: #1e2a78;
+  padding: 12px 20px;
+  background: #142c8e;
   color: white;
   position: sticky;
   top: 0;

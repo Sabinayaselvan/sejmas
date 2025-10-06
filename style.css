@@ -110,12 +110,12 @@ header .logo {
 
 
 /* Header */
-header {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
-  background: #1e2a78;
+  padding: 12px 20px;
+  background: #142c8e;
   color: white;
   position: sticky;
   top: 0;
@@ -163,29 +163,7 @@ img, video {
 .card {
   flex: 1 1 300px; /* grows, shrinks, min 300px */
 }
-/* For tablets */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    text-align: center;
-  }
-  .content {
-    grid-template-columns: 1fr;
-  }
-}
 
-/* For mobile phones */
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-  }
-  .hero h1 {
-    font-size: 1.5rem;
-  }
-  .sidebar {
-    display: none; /* hide sidebar on small screens */
-  }
-}
 
 
 
