@@ -388,9 +388,9 @@ footer {
   color: #1a73e8;
 }
 
-/* ================================
-   RESPONSIVE
-================================ */
+
+
+/* Responsive */
 @media (max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr;
@@ -407,22 +407,25 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-  }
 
-  .business-header h1 {
-    font-size: 22px;
-  }
-
-  .quote {
-    font-size: 16px;
-    padding: 15px;
-  }
+.container {
+  width: 90%;  /* instead of fixed 1200px */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-
+.card {
+  flex: 1 1 300px; /* grows, shrinks, min 300px */
+}
 /* For tablets */
 @media (max-width: 768px) {
   .navbar {
