@@ -30,13 +30,13 @@ body {
 }
 
 .nav-links a {
-  color: #fff;
+  color: #f7d3c1;
   text-decoration: none;
   font-weight: 500;
 }
 
 .nav-links li a:hover {
-  color: #f7d3c1;
+  color: white;
 }
 
 .nav-links a.active {
@@ -56,7 +56,7 @@ body {
   color: #333;
   font-style: italic;
   background: #fff;
-  border-left: 6px solid #1e2a78;
+  border-left: 6px solid #f7d3c1;
   border-radius: 8px;
   box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }
@@ -71,7 +71,7 @@ body {
   display: block;
   margin-top: 15px;
   font-weight: bold;
-  color: #228b22;
+  color: #7568a6;
 } 
 
 /* Tabs */
@@ -99,8 +99,8 @@ body {
 /* Highlight Banner */
 .highlight-banner {
   text-align: center;
-  background: #0073e6;
-  color: #fff;
+  background:#7568a6;
+  color: #f7d3c1;
   padding: 30px 20px;
   margin: 20px auto;
   max-width: 900px;
@@ -142,7 +142,7 @@ body {
 
 .reason-card h3 {
   margin-top: 0;
-  color: #142c8e;
+  color:#7568a6;
   font-size: 18px;
 }
 
@@ -169,7 +169,7 @@ body {
 }
 
 
-/* footer*/
+
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -177,8 +177,8 @@ body {
 
 /* Footer Main */
 footer {
-  background: #0d1117;
-  color: #f7d3c1;
+  background: #7568a6;
+  color:#f7d3c1 ;
   padding: 40px 60px;
 }
 
@@ -196,12 +196,12 @@ footer {
 }
 
 .footer-left h2 span {
-  color: #7568a6;
+  color:#3f3663;
 }
 
 .footer-left p {
   font-size: 14px;
-  color: #f7d3c1;
+  color: #c7c7c7;
   margin-bottom: 20px;
   line-height: 1.6;
 }
@@ -210,12 +210,12 @@ footer {
   display: inline-block;
   margin-right: 12px;
   font-size: 18px;
-  color: #f7d3c1;
+  color: #c7c7c7;
   transition: color 0.3s;
 }
 
 .social-icons a:hover {
-  color: white;
+  color: #F7D3C1;
 }
 
 /* Middle Section */
@@ -243,24 +243,24 @@ footer {
 }
 
 .footer-links ul li a:hover {
-  color: white;
+  color:#F7D3C1;
 }
 
 /* Right Section */
 .footer-contact p {
   margin: 8px 0;
   font-size: 14px;
-  color: #f7d3c1;
+  color: #c7c7c7;
 }
 
 .footer-contact .contact-link {
   text-decoration: none;
-  color:#f7d3c1;
+  color: #c7c7c7;
   transition: color 0.3s;
 }
 
 .footer-contact .contact-link:hover {
-  color: white;
+  color: #F7D3C1;
 }
 
 /* Bottom Section */
@@ -277,19 +277,19 @@ footer {
 .footer-bottom p {
   font-size: 13px;
   margin: 0;
-  color: #888;
+  color: #c7c7c7;
 }
 
 .footer-bottom-links a {
   text-decoration: none;
   margin-left: 15px;
   font-size: 13px;
-  color: #888;
+  color: #c7c7c7;
   transition: color 0.3s;
 }
 
 .footer-bottom-links a:hover {
-  color: white;
+  color: #F7D3C1;
 }
 
 /* Responsive */

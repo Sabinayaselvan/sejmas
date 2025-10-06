@@ -55,14 +55,14 @@ img, video {
 }
 
 .nav-links li a {
-  color: white;
+  color:  #f7d3c1;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-  color: #f7d3c1;
+  color: white;
 }
 
 /* ================================
@@ -78,7 +78,7 @@ img, video {
   color: #333;
   font-style: italic;
   background: #fff;
-  border-left: 6px solid #1e2a78;
+  border-left: 6px solid #f7d3c1;
   border-radius: 8px;
   box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }
@@ -87,7 +87,7 @@ img, video {
   display: block;
   margin-top: 15px;
   font-weight: bold;
-  color: #228b22;
+  color: #7568a6;
 }
 
 /* ================================
@@ -118,13 +118,13 @@ img, video {
 
 .business-header h1 {
   font-size: 28px;
-  color: #0073e6;
+  color:#7568a6;
   margin-bottom: 10px;
 }
 
 .business-header p {
   font-size: 16px;
-  color: #555;
+  color: #f3b697;
 }
 
 /* =========================
@@ -137,10 +137,10 @@ img, video {
 .domains h2,
 .pricing h2,
 .benefits h2 {
-  color: #0073e6;
+  color: #7568A6;
   font-size: 22px;
   margin-bottom: 15px;
-  border-left: 5px solid #ff9800;
+  border-left: 5px solid #f7d3c1;
   padding-left: 10px;
 }
 
@@ -156,7 +156,7 @@ img, video {
   background: #f5f7fb;
   padding: 15px;
   border-radius: 8px;
-  border-left: 4px solid #228b22;
+  border-left: 4px solid #f7d3c1;
   font-size: 15px;
   font-weight: 500;
   text-align: center;
@@ -177,8 +177,10 @@ img, video {
 }
 
 .pricing table {
-  width: 100%;
+
+  width: 50%;
   border-collapse: collapse;
+  padding-left: 50%;
   background: #fdfdfd;
   border-radius: 10px;
   overflow: hidden;
@@ -197,12 +199,12 @@ img, video {
 
 .pricing td:first-child {
   font-weight: 600;
-  color: #0073e6;
+  color:black;
 }
 
 .pricing td:last-child {
   text-align: right;
-  color: #228b22;
+  color:#e1a485;
   font-weight: bold;
 }
 
@@ -268,7 +270,7 @@ img, video {
 }
 
 .order-btn:hover {
-  background: #142c8e;
+  background:  #7a70a2;
   transform: translateY(-2px);
 }
 
@@ -277,9 +279,10 @@ img, video {
 /* ================================
    FOOTER
 ================================ */
+/* Footer Main */
 footer {
-  background: #0d1117;
-  color: #fff;
+  background: #7568a6;
+  color:#f7d3c1 ;
   padding: 40px 60px;
 }
 
@@ -289,14 +292,15 @@ footer {
   gap: 40px;
 }
 
+/* Left Section */
 .footer-left h2 {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
 }
 
 .footer-left h2 span {
-  color: #1a73e8;
+  color:#3f3663;
 }
 
 .footer-left p {
@@ -315,10 +319,10 @@ footer {
 }
 
 .social-icons a:hover {
-  color: #1a73e8;
+  color: #F7D3C1;
 }
 
-/* Footer Links */
+/* Middle Section */
 .footer-links h3,
 .footer-contact h3 {
   font-size: 16px;
@@ -327,6 +331,8 @@ footer {
 
 .footer-links ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-links ul li {
@@ -341,10 +347,10 @@ footer {
 }
 
 .footer-links ul li a:hover {
-  color: #1a73e8;
+  color:#F7D3C1;
 }
 
-/* Footer Contact */
+/* Right Section */
 .footer-contact p {
   margin: 8px 0;
   font-size: 14px;
@@ -358,10 +364,10 @@ footer {
 }
 
 .footer-contact .contact-link:hover {
-  color: #1a73e8;
+  color: #F7D3C1;
 }
 
-/* Bottom Bar */
+/* Bottom Section */
 .footer-bottom {
   border-top: 1px solid #222;
   margin-top: 30px;
@@ -374,21 +380,21 @@ footer {
 
 .footer-bottom p {
   font-size: 13px;
-  color: #888;
+  margin: 0;
+  color: #c7c7c7;
 }
 
 .footer-bottom-links a {
   text-decoration: none;
   margin-left: 15px;
   font-size: 13px;
-  color: #888;
+  color: #c7c7c7;
   transition: color 0.3s;
 }
 
 .footer-bottom-links a:hover {
-  color: #1a73e8;
+  color: #F7D3C1;
 }
-
 
 
 /* Responsive */

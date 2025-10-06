@@ -17,7 +17,7 @@ body {
 .form-container h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: #333;
+  color:#7568a6;
 }
 
 label {
@@ -61,7 +61,7 @@ textarea {
   background: #f9f9f9;
   padding: 10px;
   border-radius: 6px;
-  border-left: 4px solid #4e6ef2;
+  border-left: 4px solid #7568a6;
 }
 
 .button-group {
@@ -80,33 +80,33 @@ textarea {
 }
 
 .btn.primary {
-  background: #4e6ef2;
-  color: #fff;
+  background: #7568a6 ;
+  color: #f7d3c1;
 }
 
 .btn.primary:hover {
-  background: #3d56c0;
+  background:#7a6fa1;
 }
 
 .btn.secondary {
-  background: #ddd;
-  color: #333;
+  background: #f7d3c1;
+  color:#7568a6;
 }
 
 .btn.secondary:hover {
-  background: #bbb;
+  background:  #f3d8ca;
 }
 .back-arrow {
   display: inline-block;
   margin: 15px 20px;
   font-size: 18px;
   text-decoration: none;
-  color: #4e6ef2;
+  color:#7568a6 ;
   font-weight: bold;
 }
 
 .back-arrow:hover {
-  color: #3d56c0;
+  color:#7e73a6 ;
 }
 
 .container {

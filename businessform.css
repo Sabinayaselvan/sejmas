@@ -21,7 +21,7 @@ body {
 
 h2 {
   text-align: center;
-  color: #202124;
+  color: #7568a6;
   margin-bottom: 20px;
 }
 
@@ -80,8 +80,8 @@ textarea {
 }
 
 .submit-btn {
-  background: #1a73e8;
-  color: #fff;
+  background:#7568a6;
+  color:#f7d3c1;
   border: none;
   padding: 10px 20px;
   border-radius: 6px;
@@ -96,8 +96,8 @@ textarea {
 }
 
 .clear-btn {
-  background: #e74c3c;
-  color: #fff;
+  background:#f7d3c1;
+  color: #7568a6;
   border: none;
   padding: 10px 20px;
   border-radius: 6px;
@@ -116,12 +116,12 @@ textarea {
   margin: 15px 20px;
   font-size: 18px;
   text-decoration: none;
-  color: #4e6ef2;
+  color:#7568a6 ;
   font-weight: bold;
 }
 
 .back-arrow:hover {
-  color: #3d56c0;
+  color: #7e73a6;
 }
 
 /* Responsive container */

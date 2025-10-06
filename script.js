@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
       labels: tabLabels,
       datasets: [{
         data: [20, 20, 20, 20, 20],
-        backgroundColor: ["#0AAFF3", "#00386B", "#FDD560", "#FF6384", "#4BC0C0"],
+        backgroundColor: ["#F7D3C1", "#DFAFC1", "#C58DBF", "#9F7EBE", "#7568A6"],
         borderWidth: 1
       }]
     },
