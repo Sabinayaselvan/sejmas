@@ -421,3 +421,28 @@ footer {
     padding: 15px;
   }
 }
+
+
+/* For tablets */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .sidebar {
+    display: none; /* hide sidebar on small screens */
+  }
+}
