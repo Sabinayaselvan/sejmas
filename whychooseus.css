@@ -35,8 +35,12 @@ body {
   font-weight: 500;
 }
 
+.nav-links li a:hover {
+  color: #f7d3c1;
+}
+
 .nav-links a.active {
-  border-bottom: 2px solid #ff9800;
+ 
   padding-bottom: 2px;
 }
 
