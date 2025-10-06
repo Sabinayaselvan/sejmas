@@ -309,18 +309,19 @@ img, video {
 
 /* Floating Button */
 .order-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #ff6600;
+  
+ 
+  
+  background: orange;
   color: white;
+  padding: 12px 20px;
   border: none;
-  padding: 15px 20px;
-  border-radius: 50px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 1rem;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
-  transition: background 0.3s;
+  margin-top: 20px;
+  display: inline-block;
+
+
 }
 .order-btn:hover {
   background: #e65c00;
@@ -424,18 +425,15 @@ img, video {
 
 /* Floating Order Button */
 #journal .order-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #ff6600;
+ 
+ background: orange;
   color: white;
+  padding: 12px 20px;
   border: none;
-  padding: 15px 20px;
-  border-radius: 50px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 1rem;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
-  transition: background 0.3s;
+  margin-top: 20px;
+  display: inline-block;
 }
 #journal .order-btn:hover {
   background: #e65c00;
@@ -824,76 +822,216 @@ footer {
   }
 }
 
-.service-order-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #ff6600;
+.make-btn {
+  
+   background: orange;
   color: white;
+  padding: 12px 20px;
   border: none;
-  padding: 15px 20px;
-  border-radius: 50px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 1rem;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
-  transition: background 0.3s;
+  margin-top: 20px;
+  display: inline-block;
 }
 .service-order-btn:hover {
   background: #e65c00;
 }
 
 
-.report-order-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #ff6600;
+.make-btn {
+  background: orange;
   color: white;
+  padding: 12px 20px;
   border: none;
-  padding: 15px 20px;
-  border-radius: 50px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 1rem;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
-  transition: background 0.3s;
+  margin-top: 20px;
+  display: inline-block;
 }
 .report-order-btn:hover {
   background: #e65c00;
 }
 
-.card-order-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #ff6600;
+.make-btn {
+   background: orange;
   color: white;
+  padding: 12px 20px;
   border: none;
-  padding: 15px 20px;
-  border-radius: 50px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 1rem;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
-  transition: background 0.3s;
+  margin-top: 20px;
+  display: inline-block;
 }
 .card-order-btn:hover {
   background: #e65c00;
 }
 
-.journal-order-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #ff6600;
+.make-btn {
+   background: orange;
   color: white;
+  padding: 12px 20px;
   border: none;
-  padding: 15px 20px;
-  border-radius: 50px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 1rem;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
-  transition: background 0.3s;
+  margin-top: 20px;
+  display: inline-block;
 }
 .journal-order-btn:hover {
   background: #e65c00;
 }
 
+
+
+
+/* ================= Business Website Customization CSS ================= */
+
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+#business .header {
+  text-align: center;
+  background: #1E2A78; /* Navy Blue from your brand palette */
+  color: white;
+  padding: 30px 15px;
+}
+#business .business-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+#business .business-header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Domains Section */
+#business .domains {
+  padding: 20px;
+}
+#business .domains h2 {
+  margin-bottom: 15px;
+  color: #1E2A78;
+  text-align: center;
+}
+#business .domains ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+#business .domains li {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Pricing Section */
+#business .pricing {
+  padding: 20px;
+  background: #f0f8ff;
+}
+#business .pricing h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #1E2A78;
+}
+#business .pricing table {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#business .pricing td {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Benefits Section */
+#business .benefits {
+  padding: 20px;
+}
+#business .benefits h2 {
+  text-align: center;
+  color: #1E2A78;
+  margin-bottom: 15px;
+}
+#business .card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  max-width: 700px;
+  margin: 0 auto;
+}
+#business .card ul {
+  list-style: "✓ ";
+  padding-left: 20px;
+}
+#business .card ul li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* Projects / Delivered Websites Grid */
+#business .projects {
+  padding: 20px;
+}
+#business .projects h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #1E2A78;
+}
+#business .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+}
+#business .project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+#business .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Floating Button */
+#business .make-btn {
+   background: orange;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: inline-block;
+}
+#business .order-btn:hover {
+  background: #E6A800;
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #business .domains ul,
+  #business .grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}

@@ -5,6 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Tabbed Navigation</title>
   <link rel="stylesheet" href="style.css">
+   <style>
+    /* Pie Chart Container */
+    #pie-container {
+      width: 300px;
+      margin: 20px auto;
+      position: relative;
+      text-align: center;
+    }
+
+    /* Force canvas size */
+    #pieChart {
+      width: 300px !important;
+      height: 300px !important;
+      transition: transform 1s ease-in-out;
+    }
+
+    .rotate {
+      transform: rotate(360deg);
+    }
+
+    /* Info Text */
+    #tab-content {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 18px;
+      color: #1e2a78;
+      font-weight: bold;
+    }
+
+    /* Tab Content Sections */
+    .tab-content {
+      display: none;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
 </head>
 <body>
   <!-- Header -->
@@ -13,6 +58,7 @@
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
+         <li><a href="website.html">Website</a></li>
         <li><a href="whychooseus.html">Why Choose Us</a></li>
         <li><a href="career.html">Career</a></li>
         
@@ -29,15 +75,12 @@
     </p>
     <span>— by CEO’s</span>
   </section>
-
-  <!-- Tab Navigation -->
-  <div class="tabs">
-    <div class="tab active" data-tab="projects">Projects</div>
-    <div class="tab" data-tab="reports">Reports</div>
-    <div class="tab" data-tab="journal">Journal</div>
-    <div class="tab" data-tab="cards">Cards</div>
-    <div class="tab" data-tab="services">Additional Services</div>
+   <p style="text-align: center; font-size: 14px;color: #555;"> Click on the slices of pie chart to explore different services</p>
+   <!-- Pie Chart Section -->
+  <div id="pie-container">
+    <canvas id="pieChart"></canvas>
   </div>
+  <div id="tab-content"> Welcome to the <b>Projects</b> Page!</div>
 
   <!-- ================= Projects Tab ================= -->
   <div id="projects" class="tab-content active">
@@ -74,13 +117,14 @@
     <section class="pricing">
       <h2>Project Pricing</h2>
       <table>
-        <tr><td>1st Year</td><td>₹499</td></tr>
-        <tr><td>2nd Year</td><td>₹799</td></tr>
-        <tr><td>3rd Year</td><td>₹1499</td></tr>
-        <tr><td>4th Year</td><td>₹1999</td></tr>
-        <tr><td>Hackathons</td><td>₹2499</td></tr>
+       <tr><td>1st Year</td><td>₹699-₹999</td></tr>
+        <tr><td>2nd Year</td><td>₹1499-₹2499</td></tr>
+        <tr><td>3rd Year</td><td>₹2999-₹4499</td></tr>
+        <tr><td>4th Year</td><td>₹4499-₹5499</td></tr>
+        <tr><td>Hackathons</td><td>₹5999-₹9999</td></tr>
       </table>
     </section>
+   <button class="make-btn">Make it Happen</button>
 
     <!-- What You Get -->
     <section class="benefits">
@@ -140,8 +184,8 @@
 
     
 
-    <!-- Floating Button -->
-    <button class="order-btn">Make it Happen</button>
+  
+    
   </div>
   <!-- ================= End Projects Tab ================= -->
 
@@ -161,7 +205,7 @@
       <div class="price-card">120 Pages <span>₹ 499</span></div>
     </div>
   </section>
-  <button class="report-order-btn">Make it Happen</button>
+  <button class="make-btn">Make it Happen</button>
 
   <section class="what-you-get">
     <h2>What You Will Get</h2>
@@ -193,7 +237,7 @@
 <div id="journal" class="tab-content">
   <header class="header">
    <h1>Tired of Journal Paper Rejections?</h1>
-<p>Here a expert finish at a perfect price.</p>
+ <p>Here a expert finish at a perfect price.</p>
 
   </header>
 
@@ -211,7 +255,7 @@
       
     </div>
   </section>
-  <button class="journal-order-btn">Make it Happen</button>
+  <button class="make-btn">Make it Happen</button>
 
   <!-- What You Get -->
   <section class="benefits">
@@ -245,9 +289,9 @@
      <header class="card-header">
     <h1>“Personalized Cards, Pocket-Friendly Price!”</h1>
     <p>“Your Dream Card, Only ₹49!”</p>
-  </header>
+    </header>
 
-  <section class="card-types">
+   <section class="card-types">
     <h2>Available Card Types</h2>
     <div class="types-grid">
       <div class="type-card">Greeting & Personal Cards</div>
@@ -256,8 +300,8 @@
       <div class="type-card">Digital & E-Cards</div>
       <div class="type-card">Event & Special Occasion Cards</div>
     </div>
-  </section>
-  <button class="card-order-btn">Make it Happen</button>
+     </section>
+    <button class="make-btn">Make it Happen</button>
 
   <section class="what-you-get">
     <h2>What You Will Get</h2>
@@ -303,7 +347,7 @@
 }
 </style>
   </section>
-  <button class="service-order-btn">Make it Happen</button>
+ <button class="make-btn">Make it Happen</button>
 
   <section class="what-you-get">
     <h2>What You Will Get</h2>
@@ -316,6 +360,12 @@
   </section>
   </div>
   <!-- ================= End Additional service  Tab ================= -->
+
+
+<!-- ================= End Business Websites Tab ================= -->
+
+
+
 
  <!-- Footer Section -->
    <footer>
@@ -339,6 +389,7 @@
         <h3>Quick Links</h3>
         <ul>
           <li><a href="index.html">Home</a></li>
+              <li><a href="website.html">Projects</a></li>
           <li><a href="index.html">Projects</a></li>
           <li><a href="index.html">Journal Papers</a></li>
           <li><a href="index.html">Reports</a></li>
@@ -351,7 +402,7 @@
       <div class="footer-contact">
         <h3>Contact</h3>
         <p>sejmasinnovations@gmail.com</p>
-        <p>+91 7548883301</p>
+        <p>+91 6382536495</p>
         <p><a href="#" class="contact-link">LinkedIn</a></p>
       </div>
     </div>

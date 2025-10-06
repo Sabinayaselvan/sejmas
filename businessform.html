@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Form - Sejmas</title>
+  <link rel="stylesheet" href="businessform.css" />
+</head>
+<body>
+    <a href="index.html" class="back-arrow">← Back</a>
+
+  <div class="form-container">
+    <h2>Submit Your Form</h2>
+    <form id="businessForm">
+      
+      <!-- Name -->
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <!-- Contact -->
+      <div class="form-group">
+        <label for="contact">Contact Number *</label>
+        <input type="tel" id="contact" name="contact" required />
+      </div>
+
+      <!-- Domain Dropdown -->
+      <div class="form-group">
+        <label for="domain">Which website customization *</label>
+        <select id="domain" name="domain" required>
+          <option value="">-- Select Domain --</option>
+          <option>Corporate / Business Websites</option>
+          <option>E-Commerce Platforms</option>
+          <option>Portfolio Websites</option>
+          <option>Blogs / Content Websites</option>
+          <option>Landing Pages / Lead Generation Sites</option>
+          <option>Membership / Subscription Websites</option>
+          <option>Service Booking Websites</option>
+          <option>Landing + Corporate Hybrid Websites</option>
+        
+        </select>
+      </div>
+
+      <!-- Reason -->
+      <div class="form-group">
+        <label for="reason">Reason for Project *</label>
+        <input type="text" id="reason" name="reason" required />
+      </div>
+
+      <!-- Description -->
+      <div class="form-group">
+        <label for="description">Project Description</label>
+        <textarea id="description" name="description"></textarea>
+      </div>
+
+      <!-- Info Text -->
+      <p class="info-text">
+      Sejmas stands out by customize websites within your budget, without compromising on quality or innovation. With us, budget is never a concern.
+      </p>
+
+      <!-- Buttons -->
+      <div class="form-buttons">
+        <button type="submit" class="submit-btn">Make it Happen</button>
+        <button type="button" class="clear-btn" onclick="clearForm()">Clear Form</button>
+      </div>
+
+    </form>
+  </div>
+  <script src="businessform.js"></script>
+</body>
+</html>
