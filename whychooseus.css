@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #142c8e; /* Dark blue like your theme */
+  background: #7568a6; /* Dark blue like your theme */
   padding: 12px 20px;
   color: #fff;
 }
@@ -18,7 +18,7 @@ body {
 .logo {
   font-weight: bold;
   font-size: 20px;
-  color: #ff9800;
+  color: #f7d3c1;
 }
 
 .nav-links {
