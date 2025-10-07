@@ -10,7 +10,7 @@ document.getElementById("businessForm").addEventListener("submit", function(even
   const description = document.getElementById("description").value;
 
   // WhatsApp number (with country code, no + or spaces)
-  const whatsappNumber = "91XXXXXXXXXX"; // 👈 replace with your number
+  const whatsappNumber = "91 6382536495"; // 👈 replace with your number
 
   // Format message
   const message = `🚀 New Project Submission:%0A
