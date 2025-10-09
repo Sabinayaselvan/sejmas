@@ -6,6 +6,20 @@ body {
   background: #f5f6fa;
   color: #2c2c2e;
 }
+.logo {
+  display: flex;
+  align-items: center;  /* vertically center logo and text */
+  gap: 10px;            /* space between logo and text */
+  font-size: 1.5rem;    /* adjust text size */
+  font-weight: bold;
+  color: white;         /* adjust as per your header */
+}
+
+.logo img {
+  height: 40px;   /* adjust logo size */
+  width: auto;
+}
+
 
 
 /* Tabs */
