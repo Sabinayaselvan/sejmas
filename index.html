@@ -465,6 +465,35 @@
 
 
 
+<script>
+// Disable right-click
+document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+<script>
+// Disable some keyboard shortcuts
+document.onkeydown = function(e) {
+  if (
+    e.keyCode == 123 || // F12
+    (e.ctrlKey && e.shiftKey && e.keyCode == 73) || // Ctrl+Shift+I
+    (e.ctrlKey && e.shiftKey && e.keyCode == 74) || // Ctrl+Shift+J
+    (e.ctrlKey && e.keyCode == 85) // Ctrl+U
+  ) {
+    return false;
+  }
+};
+</script>
+<script>
+(function() {
+  const threshold = 160;
+  const checkDevTools = setInterval(function() {
+    if (window.outerWidth - window.innerWidth > threshold ||
+        window.outerHeight - window.innerHeight > threshold) {
+      document.body.innerHTML = '<h1 style="text-align:center;margin-top:20%;">DevTools is disabled</h1>';
+      clearInterval(checkDevTools);
+    }
+  }, 1000);
+})();
+</script>
 
 
   <script src="script.js"></script>
